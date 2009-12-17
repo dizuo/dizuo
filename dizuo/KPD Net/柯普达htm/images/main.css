@@ -1,0 +1,99 @@
+BODY {
+	BACKGROUND-POSITION: center 50%; SCROLLBAR-FACE-COLOR: #ffffff; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(images/bodybg.gif); MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: #61788f; SCROLLBAR-SHADOW-COLOR: #61788f; SCROLLBAR-3DLIGHT-COLOR: #ffffff; LINE-HEIGHT: 120%; SCROLLBAR-ARROW-COLOR: #61788f; SCROLLBAR-TRACK-COLOR: #ffffff; FONT-FAMILY: "Arial", "Helvetica", "sans-serif","ËÎÌו"; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; BACKGROUND-COLOR: #3399cc
+}
+A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.blue {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+.nodis {
+	DISPLAY: none
+}
+TABLE {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 12px; LINE-HEIGHT: 20px; BORDER-COLLAPSE: collapse; TEXT-ALIGN: left
+}
+.center {
+	TEXT-ALIGN: center
+}
+.left {
+	TEXT-ALIGN: left
+}
+.right {
+	TEXT-ALIGN: right
+}
+.p8 {
+	FONT-SIZE: 8px; LINE-HEIGHT: 120%
+}
+.p10 {
+	FONT-SIZE: 10px; LINE-HEIGHT: 120%
+}
+.p12 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 120%
+}
+.p14 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 120%
+}
+.p16 {
+	FONT-SIZE: 16px; LINE-HEIGHT: 120%
+}
+.p18 {
+	FONT-SIZE: 18px; LINE-HEIGHT: 120%
+}
+.p24 {
+	FONT-SIZE: 24px; LINE-HEIGHT: 120%
+}
+.brown {
+	COLOR: #990000
+}
+.red {
+	COLOR: #ff0000; LINE-HEIGHT: 120%
+}
+.red2 {
+	COLOR: #ff6600
+}
+.red2_weight {
+	FONT-WEIGHT: bold; COLOR: #ff6600
+}
+.red_12 {
+	FONT-SIZE: 12px; COLOR: #ff0000; LINE-HEIGHT: 120%
+}
+.red_16 {
+	FONT-SIZE: 16px; COLOR: #ff0000; LINE-HEIGHT: 120%
+}
+.red_18 {
+	FONT-SIZE: 18px; COLOR: #ff0000; LINE-HEIGHT: 120%
+}
+.blue {
+	COLOR: #0000ff
+}
+.h20 {
+	LINE-HEIGHT: 20px
+}
+.h25 {
+	LINE-HEIGHT: 25px
+}
+.font-weight {
+	FONT-WEIGHT: bold
+}
+.font-weight_14 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.font-weight_16 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px
+}
+.Input01 {
+	BORDER-RIGHT: #49633b 1px solid; BORDER-TOP: #49633b 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #49633b 1px solid; COLOR: #49633b; BORDER-BOTTOM: #49633b 1px solid; HEIGHT: 16px; BACKGROUND-COLOR: #ffffff
+}
+.imput02 {
+	BORDER-TOP-STYLE: none; BORDER-BOTTOM: #000000 1px dashed; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; TEXT-DECORATION: none
+}
+.lefttd {
+	BORDER-RIGHT: 1px solid; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.border {
+	BORDER-RIGHT: #cccecd 1px solid; BORDER-TOP: #cccecd 1px solid; BORDER-LEFT: #cccecd 1px solid; BORDER-BOTTOM: #cccecd 1px solid
+}

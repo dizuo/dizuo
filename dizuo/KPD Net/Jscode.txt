@@ -1,0 +1,164 @@
+//网址链接：http://www.jscode.cn/jave_img/350803719.htm
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>横向不间断的连续滚动图片/文字广告-网页特效观止-网页特效代码|JsCode.CN|</title>
+</head>
+
+<body>
+<script language="JavaScript">
+imgArr=new Array()
+imgArr[0]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/l/lisababy6617.gif border=0></a>"
+imgArr[1]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/t/testool4434.gif border=0></a>"
+imgArr[2]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/s/sxyuda6549.gif border=0></a>"
+imgArr[3]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/q/qeji4041.gif border=0></a>"
+imgArr[4]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/i/ieasytraining3984.gif border=0></a>"
+imgArr[5]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/t/trainings1442.gif border=0></a>"
+imgArr[6]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/r/renhebj002indexasp2486.gif border=0></a>"
+imgArr[7]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/e/efeedlink6085.gif border=0></a>"
+imgArr[8]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/k/kaixingou5811.gif border=0></a>"
+imgArr[9]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/h/9happyindex8htm5912.gif border=0></a>"
+imgArr[10]="<a href=# onmouseMove='javascript:outHover=true' onMouseover='javascript:outHover=true' onMouseout='javascript:outHover=false;mvStart()'><img src=http://image0.sina.com.cn/images/bizsite/promote/c/chinaroom6034.gif border=0></a>"
+var moveStep=4        //步长，单位：pixel
+var moveRelax=100    //移动时间间隔，单位：ms
+
+ns4=(document.layers)?true:false
+
+var displayImgAmount=4    //视区窗口可显示个数
+var divWidth=125    //每块图片占位宽
+var divHeight=60    //每块图片占位高
+
+var startDnum=0
+var nextDnum=startDnum+displayImgAmount
+var timeID
+var outHover=false
+
+var startDivClipLeft
+var nextDivClipRight
+
+function initDivPlace(){
+    if (ns4){
+        for (i=0;i<displayImgAmount;i++){
+            eval("document.divOuter.document.divAds"+i+".left="+divWidth*i)
+        }
+        for (i=displayImgAmount;i<imgArr.length;i++){
+            eval("document.divOuter.document.divAds"+i+".left="+divWidth*displayImgAmount)
+        }
+    }else{
+        for (i=0;i<displayImgAmount;i++){
+            eval("document.all.divAds"+i+".style.left="+divWidth*i)
+        }
+        for (i=displayImgAmount;i<imgArr.length;i++){
+            eval("document.all.divAds"+i+".style.left="+divWidth*displayImgAmount)
+        }
+    }
+}
+
+function mvStart(){
+    timeID=setTimeout(moveLeftDiv,moveRelax)
+}
+
+function mvStop(){
+    clearTimeout(timeID)
+}
+
+function moveLeftDiv(){
+    if (ns4){
+        for (i=0;i<=displayImgAmount;i++){
+            eval("document.divOuter.document.divAds"+parseInt((startDnum+i)%imgArr.length)+".left=document.divOuter.document.divAds"+parseInt((startDnum+i)%imgArr.length)+".left-moveStep")
+        }
+
+        startDivClipLeft=parseInt(eval("document.divOuter.document.divAds"+startDnum+".clip.left"))
+        nextDivClipRight=parseInt(eval("document.divOuter.document.divAds"+nextDnum+".clip.right"))
+
+        if (startDivClipLeft+moveStep>divWidth){
+            eval("document.divOuter.document.divAds"+nextDnum+".clip.right="+divWidth)
+            
+            eval("document.divOuter.document.divAds"+startDnum+".left="+divWidth*displayImgAmount)
+            eval("document.divOuter.document.divAds"+parseInt((nextDnum+1)%imgArr.length)+".left=document.divOuter.document.divAds"+nextDnum+".left+"+divWidth)
+            eval("document.divOuter.document.divAds"+parseInt((nextDnum+1)%imgArr.length)+".clip.left=0")
+            
+            
+            startDnum=(++startDnum)%imgArr.length
+            nextDnum=(startDnum+displayImgAmount)%imgArr.length
+            
+            startDivClipLeft=moveStep-(divWidth-startDivClipLeft)
+            nextDivClipRight=moveStep-(divWidth-nextDivClipRight)
+        }else{
+            eval("document.divOuter.document.divAds"+nextDnum+".clip.left=0")
+            startDivClipLeft+=moveStep
+            nextDivClipRight+=moveStep
+        }
+        eval("document.divOuter.document.divAds"+startDnum+".clip.left="+startDivClipLeft)
+        eval("document.divOuter.document.divAds"+nextDnum+".clip.right="+nextDivClipRight)
+    }else{
+        for (i=0;i<=displayImgAmount;i++){
+            eval("document.all.divAds"+parseInt((startDnum+i)%imgArr.length)+".style.left=document.all.divAds"+parseInt((startDnum+i)%imgArr.length)+".style.pixelLeft-moveStep")
+        }
+    
+        startDivClipLeft=parseInt(eval("document.all.divAds"+startDnum+".currentStyle.clipLeft"))
+        nextDivClipRight=parseInt(eval("document.all.divAds"+nextDnum+".currentStyle.clipRight"))
+    
+        if (startDivClipLeft+moveStep>divWidth){
+            eval("document.all.divAds"+nextDnum+".style.clip='rect(0,"+divWidth+","+divHeight+",0"+")'")
+            
+            eval("document.all.divAds"+startDnum+".style.left="+divWidth*displayImgAmount)
+            eval("document.all.divAds"+parseInt((nextDnum+1)%imgArr.length)+".style.left=document.all.divAds"+nextDnum+".style.pixelLeft+"+divWidth)
+            
+            startDnum=(++startDnum)%imgArr.length
+            nextDnum=(startDnum+displayImgAmount)%imgArr.length
+            
+            startDivClipLeft=moveStep-(divWidth-startDivClipLeft)
+            nextDivClipRight=moveStep-(divWidth-nextDivClipRight)
+        }else{
+            startDivClipLeft+=moveStep
+            nextDivClipRight+=moveStep
+        }
+        eval("document.all.divAds"+startDnum+".style.clip='rect(0,"+divWidth+","+divHeight+","+startDivClipLeft+")'")
+        eval("document.all.divAds"+nextDnum+".style.clip='rect(0,"+nextDivClipRight+","+divHeight+",0)'")
+    }
+
+    if (outHover){
+        mvStop()
+    }else{
+        mvStart()
+    }
+    
+    
+}
+
+function writeDivs(){
+    if (ns4){
+        document.write("<ilayer name=divOuter width=750 height="+divHeight+">")
+        
+        for (i=0;i<imgArr.length;i++){
+            document.write("<layer name=divAds"+i+">")
+            document.write(imgArr[i]+" ")
+            document.write("</layer>")
+        }
+        document.write("</ilayer>")
+        document.close()
+        for (i=displayImgAmount;i<imgArr.length;i++){
+            eval("document.divOuter.document.divAds"+i+".clip.right=0")
+        }
+    }else{
+        document.write("<div id=divOuter style='position:relative' width=750 height="+divHeight+">")
+        
+        for (i=0;i<imgArr.length;i++){
+            document.write("<div id=divAds"+i+" style='position:absolute;clip:rect(0,"+divWidth+","+divHeight+",0)'>")
+            document.write(imgArr[i]+" ")
+            document.write("</div>")
+        }
+        document.write("</div>")
+        for (i=displayImgAmount;i<imgArr.length;i++){
+            eval("document.all.divAds"+i+".style.clip='rect(0,0,"+divHeight+",0)'")
+        }
+    }
+}
+</script>
+<BODY onload=javascript:mvStart()>
+<SCRIPT language=JavaScript>writeDivs();initDivPlace();</SCRIPT>
+</body>
+
+</html>
