@@ -1,0 +1,31 @@
+//设置超链接的样式
+
+<!--
+a:link { text-decoration: none;color:#0063B7}
+a:active { text-decoration:blink}
+a:hover { text-decoration:underline;color: red} 
+a:visited { text-decoration: none;color: green}
+--> 
+
+中间关于我们：
+<th width="405" height="123" align="left" valign="top" bgcolor="#FFFFFF" scope="col">
+		<style>
+		div { 
+			width:516px; 
+			border:0px solid red 
+		} 
+		img { 
+			float:left; 
+			width:100px; 
+			height:100px 
+		} 		
+		</style>
+		<div> 
+		  <p><img src="res/service.jpg" width="160" height="82" /> 
+		    <span class="style40">北京柯普达贸易有限公司是一家专业以会议服务、礼品开发及销售、设备租赁为主的综合性贸易服务公司。我们将秉承一贯“专业和诚信”的服务精神，以个性化的解决方案，“健康、时尚、环保、高质量”的产品、完善的售后服务，“专业、敬业、热忱”的团队精神和密切的配合协作来保证方案和项目的顺利实施，为将 “柯普达” 打造成为中国前沿的服务品牌而不懈努力…</span><br>
+		      </p>
+		  </div> 
+		</th>
+        </tr>
+      <tr>
+        <td align="left" valign="top">&nbsp;</td>
