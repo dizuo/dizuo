@@ -1,0 +1,16 @@
+  one
+    two
+      apple
+      banana
+      peach
+    three
+      china
+      england
+one             0       0       0
+two             3       2       0
+apple           6       4       0
+banana          1.5     4       2.59808
+peach           1.5     4       -2.59808
+three           -3      2       4.52987e-007
+china           0       4       4.52987e-007
+england         -6      4       9.05975e-007

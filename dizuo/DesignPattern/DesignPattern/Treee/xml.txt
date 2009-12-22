@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HTree>
+<Node Type="ROOT" Name="1">
+	<Node Type="JOINT" Name="2">
+		<Node Type="END" Name="3">
+		</Node>		
+		
+		<Node Type="JOINT" Name="4">
+			<Node Type="END" Name="5">
+			</Node>		
+			<Node Type="END" Name="6">
+			</Node>		
+			<Node Type="END" Name="7">
+			</Node>		
+			<Node Type="END" Name="8">
+			</Node>		
+		</Node>		
+		
+		<Node Type="END" Name="9">
+		</Node>	
+		
+		<Node Type="END" Name="10">
+		</Node>	
+	</Node>
+	
+	<Node Type="JOINT" Name="11">
+		<Node Type="JOINT" Name="12">
+			<Node Type="END" Name="13">
+			</Node>	
+			<Node Type="END" Name="14">
+			</Node>	
+			<Node Type="END" Name="15">
+			</Node>	
+			<Node Type="END" Name="16">
+			</Node>	
+		</Node>	
+		
+		<Node Type="END" Name="17">
+		</Node>	
+		<Node Type="END" Name="18">
+		</Node>	
+		<Node Type="END" Name="19">
+		</Node>	
+	</Node>	
+</Node>
+</HTree>
+
+//注意上面的编码方式是UTF-8 所以不能出现中文
+注释格式<!-- ******** -->
+<!-- version = 0.0 -->
+ROOT 1
+{
+	JOINT 2
+	{
+		END 3
+		{
+		}
+		JOINT 4
+		{
+			END 5
+			{
+			}
+			END 6
+			{
+			}			
+			END 7
+			{
+			}			
+			END 8
+			{
+			}
+		}
+		END 9
+		{
+		}
+		END 10
+		{
+		}
+	}
+	JOINT 11
+	{
+		JOINT 12
+		{
+			END 13
+			{
+			}
+			END 14
+			{
+			}			
+			END 15
+			{
+			}			
+			END 16
+			{
+			}
+		}
+		END 17
+		{
+		}
+		END 18
+		{
+		}
+		END 19
+		{
+		}
+	}
+}

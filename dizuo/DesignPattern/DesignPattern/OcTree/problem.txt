@@ -1,0 +1,52 @@
+静态成员数组赋值问题...
+	专门化一个函数来处理...
+
+
+char *GeometryObject::PackOctree(const GeometryOctree *octree, CollisionHeader *header)
+{
+	const Point3D& center = octree->GetCenter();
+	const Vector3D& size = octree->GetSize();
+	
+	header->collisionBounds.xmin = center.x - size.x;
+	header->collisionBounds.xmax = center.x + size.x;
+	header->collisionBounds.ymin = center.y - size.y;
+	header->collisionBounds.ymax = center.y + size.y;
+	header->collisionBounds.zmin = center.z - size.z;
+	header->collisionBounds.zmax = center.z + size.z;
+	
+	long count = octree->GetIndexCount();
+	header->elementCount = (unsigned short) count;
+	header->offsetAlign = 4;
+	
+	const unsigned long *indexArray = octree->GetIndexArray();
+	unsigned short *packedArray = header->GetIndexArray();
+	for (natural a = 0; a < count; a++) packedArray[a] = indexArray[a];
+	if ((count & 1) != 0) packedArray[count] = 0;
+	
+	char *nodeBase = reinterpret_cast<char *>(header);
+	char *subnodeBase = nodeBase + sizeof(CollisionHeader) + ((count + 1) & ~1) * 2;
+	
+	for (natural a = 0; a < 8; a++)
+	{
+		const GeometryOctree *node = octree->GetSubnode(a);
+		if (node)
+		{
+			unsigned long offset = (subnodeBase - nodeBase) / 4;
+			if (offset < 65536)
+			{
+				header->subnodeOffset[a] = (unsigned short) offset;
+				subnodeBase = PackOctree(node, reinterpret_cast<CollisionHeader *>(subnodeBase));
+			}
+			else
+			{
+				header->subnodeOffset[a] = 0;
+			}
+		}
+		else
+		{
+			header->subnodeOffset[a] = 0;
+		}
+	}
+	
+	return (subnodeBase);
+}

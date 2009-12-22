@@ -1,0 +1,20 @@
+.SkyBox
+backBmp		Data/SkyBox/Back.bmp
+frontBmp	Data/SkyBox/Front.bmp
+bottomBmp	Data/SkyBox/Bottom.bmp
+topBmp 		Data/SkyBox/Top.bmp
+leftBmp		Data/SkyBox/Left.bmp
+rightBmp 	Data/SkyBox/Right.bmp
+position	0.0,0.0,0.0
+size		500,500,500
+
+.Wall
+texture		Data/wall.bmp
+size		600,300,600
+
+.Ground
+texture		Data/ground/SAND0.bmp
+
+.Test
+
+

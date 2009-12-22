@@ -1,0 +1,54 @@
+感觉自己又犯了一个大错
+
+继承 
+拥有
+
+通过XML作为脚本输入树状结构......
+
+文件头：
+<?xml version="1.0" encoding="UTF-8"?>
+
+注释语句格式,而且只能一行
+<!--- <test pattern="SECAM" /><test pattern="NTSC" /> -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Node Type="END" Name="3">
+</Node>		
+
+构思：
+1.将文件读取到一个buffer数组中
+2.去掉中间没用的字符：
+char* skipInvalidChar( char* str )
+{
+	if ( !str )
+	{
+		return NULL;
+	}
+
+	char* outStr = str;
+	while ( *outStr==' ' || *outStr=='\r' || *outStr=='\n' || *outStr=='\t' || *outStr=='\b' )
+	{
+		++outStr;
+	}
+
+	return outStr;
+}
+
+	扫描一遍，将大写全部转化为小写.
+
+3.strncmp 使用这个函数，最段比较关键字.
+关键字表：
+<?xml
+version
+<
+<!
+Node
+Type
+=
+Name
+</
+
+ROOT
+JOINT
+END

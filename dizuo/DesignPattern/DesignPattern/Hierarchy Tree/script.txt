@@ -1,0 +1,57 @@
+ROOT one
+{
+	JOINT two
+	{
+		END apple
+		{
+		}
+		JOINT banana
+		{
+			END 1
+			{
+			}
+			END 2
+			{
+			}			
+			END 3
+			{
+			}			
+			END 4
+			{
+			}
+		}
+		END peach
+		{
+		}
+		END grape
+		{
+		}
+	}
+	JOINT three
+	{
+		JOINT china
+		{
+			END 1
+			{
+			}
+			END 2
+			{
+			}			
+			END 3
+			{
+			}			
+			END 4
+			{
+			}
+		}
+		END england
+		{
+		}
+		END amarica
+		{
+		}
+		END ruassian
+		{
+		}
+	}
+}

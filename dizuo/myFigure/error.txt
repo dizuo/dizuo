@@ -1,0 +1,18 @@
+1>Keyboard.obj : error LNK2005: "int Share::g_frameTimeMs" (?g_frameTimeMs@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Keyboard.obj : error LNK2005: "int Share::g_iWindowWid" (?g_iWindowWid@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Keyboard.obj : error LNK2005: "int Share::g_iWindowHeigh" (?g_iWindowHeigh@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Keyboard.obj : error LNK2005: "class Figure * Share::g_pFigure" (?g_pFigure@Share@@3PAVFigure@@A) 已经在 GUISystem.obj 中定义
+1>Keyboard.obj : error LNK2005: "class Vec3<float> Share::g_vAngle" (?g_vAngle@Share@@3V?$Vec3@M@@A) 已经在 GUISystem.obj 中定义
+1>Keyboard.obj : error LNK2005: "class Vec3<float> Share::g_vWatchPoint" (?g_vWatchPoint@Share@@3V?$Vec3@M@@A) 已经在 GUISystem.obj 中定义
+1>Main.obj : error LNK2005: "int Share::g_frameTimeMs" (?g_frameTimeMs@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Main.obj : error LNK2005: "int Share::g_iWindowWid" (?g_iWindowWid@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Main.obj : error LNK2005: "int Share::g_iWindowHeigh" (?g_iWindowHeigh@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Main.obj : error LNK2005: "class Figure * Share::g_pFigure" (?g_pFigure@Share@@3PAVFigure@@A) 已经在 GUISystem.obj 中定义
+1>Main.obj : error LNK2005: "class Vec3<float> Share::g_vAngle" (?g_vAngle@Share@@3V?$Vec3@M@@A) 已经在 GUISystem.obj 中定义
+1>Main.obj : error LNK2005: "class Vec3<float> Share::g_vWatchPoint" (?g_vWatchPoint@Share@@3V?$Vec3@M@@A) 已经在 GUISystem.obj 中定义
+1>Mouse.obj : error LNK2005: "int Share::g_frameTimeMs" (?g_frameTimeMs@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Mouse.obj : error LNK2005: "int Share::g_iWindowWid" (?g_iWindowWid@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Mouse.obj : error LNK2005: "int Share::g_iWindowHeigh" (?g_iWindowHeigh@Share@@3HA) 已经在 GUISystem.obj 中定义
+1>Mouse.obj : error LNK2005: "class Figure * Share::g_pFigure" (?g_pFigure@Share@@3PAVFigure@@A) 已经在 GUISystem.obj 中定义
+1>Mouse.obj : error LNK2005: "class Vec3<float> Share::g_vAngle" (?g_vAngle@Share@@3V?$Vec3@M@@A) 已经在 GUISystem.obj 中定义
+1>Mouse.obj : error LNK2005: "class Vec3<float> Share::g_vWatchPoint" (?g_vWatchPoint@Share@@3V?$Vec3@M@@A) 已经在 GUISystem.obj 中定义
