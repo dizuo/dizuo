@@ -1,0 +1,55 @@
+Since I received a couple of responses to my offer to
+share my AVL template, here it is! I've also enclose a
+test application that verifies correct functioning.
+
+What is an AVL tree? An AVL tree is a mostly balanced
+tree that has the property that no subtree is every
+more than 1 longer than its sibling. This is slightly
+better than a red-black tree which has the property
+that no subtree is ever more than twice as long as its
+sibling.
+
+Here's a message by Yordan (warjo) that presents many
+interesting facts about AVL trees -
+
+http://www.flipcode.com/cgi-bin/msg.cgi?showThread=COTD-TemplatedBinaryTree&forum=cotd&id=51
+
+What's special about this template? It's short, it
+implements insert, remove, and find, it comes with an
+iterator, it works :) 
+
+I use it in instances when one would normally use a
+hash or other map, which is why the template takes a
+Key and an Item.
+
+I know that traditionally, ordered trees have only an
+Item, and sort based on that item, but a typical use
+for this template is for an asset cache, or state
+machine cache in a scripting engine. In those cases,
+the Items are not inherently ordered, but their
+handles are. Adding operator <, >, and == to objects
+which are not inherently comparable (such as state
+machines) would be icky architecturally,
+
+Why an AVL tree instead of using the STL? 
+
+1) I prefer AVL trees to red-black trees.
+
+2) I mainly code for consoles and various
+considerations to do with console compilers, code
+footprint, and cross platform compatiblity preclude
+using the STL at this time. 
+
+3) When I debug I like to be able to quickly access
+the data structures I am traversing without having to
+open up the various allocators and what-not associated
+with STL. I know VC gives you tools to write macros to
+display the data any way I like, but since I don't
+develop with VC, that doesn't help me.
+
+This template is free for use, no warrantee or
+suitability for any particular purpose is expressed or
+implied. Verify that it works the way you expect
+before you incorporate it into your own project.
+
+- nick (meshula)

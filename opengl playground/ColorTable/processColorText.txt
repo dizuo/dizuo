@@ -1,0 +1,46 @@
+void processColorText()
+{
+	typedef vector<string>	StringVec;
+
+	ifstream inFile("color.txt");
+	
+	StringVec colorsInfos;
+
+	StringVec colorEnums;
+	StringVec colorComments;
+	StringVec colorValues;
+
+	copy(istream_iterator<string>(inFile), istream_iterator<string>(), back_inserter(colorsInfos));
+	
+	//process each line : enum	|	value	|	comment
+	for (int i=0; i<colorsInfos.size(); i++)
+	{
+		if ( i%4==0 )		//enums
+			colorEnums.push_back( colorsInfos[i] );
+		else if ( i%4==1 )	//value
+		{
+			string v = colorsInfos[i];
+			v[0] = '(';
+			v.insert(1, "0x");
+			v += "),";
+			colorValues.push_back( v );
+		}
+		else if ( i%4==2 )
+		{
+			colorComments.push_back( string("//") + colorsInfos[i] );
+		}
+	}
+	
+	ofstream enumOutFile("color_enums.txt");
+	for (int i=0; i<colorEnums.size(); i++)
+		enumOutFile << colorEnums[i] << "," << endl;
+
+	ofstream valueOutFile("color_value.txt");
+	for (int i=0; i<colorValues.size(); i++)
+		valueOutFile << colorValues[i] << "\t"  << colorComments[i] << endl;
+
+	//copy(colorsInfos.begin(), colorsInfos.end(), ostream_iterator<string>(cout,"\n"));
+	inFile.close();
+	enumOutFile.close();
+	valueOutFile.close();
+}

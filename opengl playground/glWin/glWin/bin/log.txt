@@ -1,0 +1,14 @@
+===== Log started at 2010-07-08, 18:43:05. =====
+
+18:43:05  Main window is created.
+18:43:06  Created a rendering thread for OpenGL.
+18:43:06  OpenGL child window is created.
+18:43:06  OpenGL form dialog is created.
+18:43:06  Status bar window is created.
+18:43:06  Initialized OpenGL states.
+18:43:06  Initialized OpenGL viewport and projection matrix.
+18:43:06  Entering OpenGL rendering thread...
+18:43:37  Exit OpenGL rendering thread.
+
+
+===== END OF LOG =====

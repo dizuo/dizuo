@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGL", "OpenGL.vcproj", "{03495453-38A5-4F36-B915-826310BF0A8F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VL_Camera", "VL_Camera\VL_Camera.vcproj", "{EAC97D05-210B-490D-B170-C22E81EC95BF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glut_bass", "glut_bass\glut_bass.vcproj", "{799171CB-05AB-43B3-84A0-168EF2E6653D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03495453-38A5-4F36-B915-826310BF0A8F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03495453-38A5-4F36-B915-826310BF0A8F}.Debug|Win32.Build.0 = Debug|Win32
+		{03495453-38A5-4F36-B915-826310BF0A8F}.Release|Win32.ActiveCfg = Release|Win32
+		{03495453-38A5-4F36-B915-826310BF0A8F}.Release|Win32.Build.0 = Release|Win32
+		{EAC97D05-210B-490D-B170-C22E81EC95BF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EAC97D05-210B-490D-B170-C22E81EC95BF}.Debug|Win32.Build.0 = Debug|Win32
+		{EAC97D05-210B-490D-B170-C22E81EC95BF}.Release|Win32.ActiveCfg = Release|Win32
+		{EAC97D05-210B-490D-B170-C22E81EC95BF}.Release|Win32.Build.0 = Release|Win32
+		{799171CB-05AB-43B3-84A0-168EF2E6653D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{799171CB-05AB-43B3-84A0-168EF2E6653D}.Debug|Win32.Build.0 = Debug|Win32
+		{799171CB-05AB-43B3-84A0-168EF2E6653D}.Release|Win32.ActiveCfg = Release|Win32
+		{799171CB-05AB-43B3-84A0-168EF2E6653D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
