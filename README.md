@@ -7,10 +7,22 @@ dizuo
 dizuo / Opengl Csg Test
 ---
 >   基于CSG树的3D boolean运算。
+>   图片来自csdn空间
+<img src="http://img.my.csdn.net/uploads/201006/20/0_1277017024vXX5.gif" alt="CSG截图" width="50%" />
 
 dizuo / dizuo / OGL
 ---
->   大三opengl课程作业，当时实现了一个。
+>   大三opengl课程作业，实现了一个场景管理的demo，研究生虚拟现实课程时做过一些升级，主要feature如下：
+* 3ds、obj加载
+* tga, pcx, bmp纹理加载
+* 场景管理多cha树
+* 简单地形绘制，加载。不支持LOD
+* MD2动画播放
+* log、config 脚本简单实现
+* 场景雾简单使用
+* 实现四种camera模式：walk，drive，flight，trackball。
+
+>   图片来自腾讯微博空间
 场景效果图如下：
 <img src="http://t2.qpic.cn/mblogpic/5e4f8e4132525bc53d78/2000"  alt="OGL截图" width="50%" />
 
