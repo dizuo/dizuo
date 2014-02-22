@@ -7,7 +7,7 @@ dizuo
 dizuo / Opengl Csg Test
 ---
 >   基于CSG树的3D boolean运算。
->   图片来自csdn空间
+<p 图片来自csdn空间 /p>
 <img src="http://img.my.csdn.net/uploads/201006/20/0_1277017024vXX5.gif" alt="CSG截图" width="50%" />
 
 dizuo / dizuo / OGL
@@ -20,12 +20,24 @@ dizuo / dizuo / OGL
 * MD2动画播放
 * log、config 脚本简单实现
 * 场景雾简单使用
-* 实现四种camera模式：walk，drive，flight，trackball。
+* 实现四种camera模式：walk，drive，flight，trackball
 
->   图片来自腾讯微博空间
-场景效果图如下：
+<p 图片来自腾讯微博空间，场景效果图如下：/p>
 <img src="http://t2.qpic.cn/mblogpic/5e4f8e4132525bc53d78/2000"  alt="OGL截图" width="50%" />
 
+dizuo / dizuo / Simple Model Engine
+---
+> 研一期间实现的一个简单的建模库，进行了一些简单的尝试：
+* 曲线：B样条
+* 基本3D物体：cylinder，sphere，box. 
+* 放样 lofter
+* 挤出 extrude
+* 车削加工 lathe
+* 所有物体都支持纹理
+* 模型动画器：扭曲 twist，波浪 wave。
+
+<p 图片来自 OpenGL 3D技术群空间，建模库截图如下： /p>
+<img src="http://group.store.qq.com/qun/1275b428-db45-4eef-a7ce-d276d4b27163/6eeedc29-3172-4623-9c61-b479b1fdb1bd/800&w5=800&h5=619&rf=viewer_421" alt="建模库截图" width="50%" />
 
 dizuo / opengl play ground / VL_Camera
 ---
