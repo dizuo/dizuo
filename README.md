@@ -61,5 +61,6 @@ dizuo / opengl play ground / QEasingCurve
 
 dizuo / opengl play ground / glut_bass
 >   声音与图形互动：http://blog.csdn.net/ryfdizuo/article/details/5987246
+
 >   提前声音振幅驱动轮胎缩放，截图：
 <img src="http://img.my.csdn.net/uploads/201101/16/0_1295158757659j.gif" alt="声音图形互动" width="50%" />
