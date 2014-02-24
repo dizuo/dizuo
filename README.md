@@ -31,6 +31,19 @@ dizuo / dizuo / OGL
 > 图片来自腾讯微博空间，场景效果图如下：
 <img src="http://t2.qpic.cn/mblogpic/5e4f8e4132525bc53d78/2000"  alt="OGL截图" width="50%" />
 
+dizuo / dizuo / myFigure
+---
+>   本科毕业设计，实现了一个骨骼动画播放器：
+*   加载*.bvh动画文件；
+*   动画暂停、快进、快退；
+*   支持照相机 pan、zoom、track模式
+*   track模式下可以编辑骨架，修改bvh文件。
+
+> 图片来自csdn博客，效果图如下：
+<img src="http://p.blog.csdn.net/images/p_blog_csdn_net/dizuo/EntryImages/20090531/bvh%20backer.jpg" alt="动画播放器截图" width="50%" />
+
+> 类似角色动画文章，参考：http://blog.csdn.net/ryfdizuo/article/details/7368057   
+
 dizuo / dizuo / Simple Model Engine
 ---
 > 研一期间实现的一个简单的建模库，进行了一些简单的尝试：
