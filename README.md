@@ -34,6 +34,7 @@ dizuo / dizuo / OGL
 dizuo / dizuo / myFigure
 ---
 >   本科毕业设计，实现了一个骨骼动画播放器：
+*   基于opengl自己实现简单控件：imageButton，fontButton，进度条等控件。
 *   加载*.bvh动画文件；
 *   动画暂停、快进、快退；
 *   支持照相机 pan、zoom、track模式
