@@ -40,7 +40,7 @@ dizuo / dizuo / myFigure
 *   支持照相机 pan、zoom、track模式
 *   track模式下可以编辑骨架，修改bvh文件。
 
-![动画播放器](/bvh_player.jpeg)
+![动画播放器](/bvh_player.jpg)
 
 > 类似角色动画文章，参考：http://blog.csdn.net/ryfdizuo/article/details/7368057   
 
@@ -55,8 +55,8 @@ dizuo / dizuo / Simple Model Engine
 * 所有物体都支持纹理
 * 模型动画器：扭曲 twist，波浪 wave。
 
-> 图片来自csdn 空间，建模库截图如下：
-<img src="http://img.my.csdn.net/uploads/201402/22/1393032590_2456.jpg" alt="建模库截图" width="50%" />
+建模库截图如下：
+![Simple model engine](/SME.jpeg)
 
 dizuo / opengl play ground / VL_Camera
 ---
