@@ -8,7 +8,8 @@ dizuo / dizuo / DesignPattern
 ---
 > 本科的一些学习code：设计模式，事件模型等。
 > 四叉树遍历查询demo：http://blog.csdn.net/ryfdizuo/article/details/4100689
-<img src="http://p.blog.csdn.net/images/p_blog_csdn_net/dizuo/EntryImages/20090424/demo2.jpg" alt="四叉树demo" width="50%" />
+
+![四叉树查询](/quad_tree.jpg)
 
 dizuo / Opengl Csg Test
 ---
