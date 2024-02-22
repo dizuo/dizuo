@@ -1,8 +1,11 @@
 dizuo
 =====
 本科、研究生期间的所有opengl代码集。
-从google code迁移：https://code.google.com/p/dizuo/
-> 所有代码都是基于glut框架，测试demo居多。
+
+dizuo / IMMComposer
+> qt + opencv + vp_kernal
+
+![IMMComposer](/qvp_video.jpg)
 
 dizuo / dizuo / DesignPattern
 ---
